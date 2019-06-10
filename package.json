@@ -1,0 +1,19 @@
+{
+    "name": "chat",
+    "description": "A simple chat room built using web sockets and NodeJS",
+    "main": "main.js",
+    "repository": {
+        "url": "git@github.com:mcgill-a/chat",
+        "type": "git"
+    },
+    "scripts": {
+        "start": "node main.js"
+    },
+    "author": "Alex McGill",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.15.2",
+        "minimist": "^1.2.0",
+        "socket.io": "^1.7.3"
+    }
+}

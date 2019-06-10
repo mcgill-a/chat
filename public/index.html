@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Meta -->
+    <title>Chat Room</title>
+    
+    <!-- Styles -->  
+    <link rel="stylesheet" href="css/styles.css">
+  
+</head>
+<body>
+    <div class="row">
+        <div class="panel">
+            <h2>Web Sockets Chat Room</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="username">
+            <input id="inputUsername"></input>
+            <a class="button ripple" id="sendUsername">Change Username</a>
+        </div>
+        <div class="row">
+            <div class="panel">
+                <ul id="log"></ul>
+            </div>
+        </div>
+
+        <div class="panel">
+            <input id="inputMessage" placeholder="@Anonymous"></input>
+            <a class="button ripple" id="sendMessage">Send Message</a>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
