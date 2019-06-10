@@ -61,7 +61,17 @@ socket.on('message', (data) => {
 function getTimestamp(output) {
     var today = new Date();
     var date = today.getDate() + '/' + (today.getMonth()+1) + '/' + today.getFullYear();
-    var time = today.getHours() + ":" + today.getMinutes();
+    var hours = today.getHours();
+    var minutes = today.getMinutes();
+
+    if (hours < 10) {
+        hours = '0' + hours;
+    }
+    if (minutes < 10) {
+        minutes = '0' + minutes;
+    }
+    
+    var time = hours + ":" + minutes;
     if (output == "date") {
         return date;
     } else if (output == "time") {
