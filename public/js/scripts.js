@@ -77,7 +77,7 @@ function getTimestamp(output) {
     } else if (output == "time") {
         return time;
     } else {
-        return time + ' ' + date;
+        return date + ' ' + time;
     }
 }
 
