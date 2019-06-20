@@ -14,6 +14,10 @@ const { name = 'chat', port = '3000'} = args;
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.get('/api/name', (req, res) => {
+  res.json({ name });
+});
+
 io.on('connection', (socket) => {
     console.log('Client Connected');
     
